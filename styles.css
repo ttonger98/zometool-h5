@@ -245,12 +245,29 @@ body.build-open {
 
 .parts-toggle-btn {
   flex: none;
-  padding: 6px 12px;
+  padding: 8px 16px;
   border-radius: 999px;
-  background: #f0f0f0;
-  color: #666;
-  font-size: 12px;
-  font-weight: 500;
+  background: linear-gradient(135deg, #f5f5f5, #ffffff);
+  color: #333;
+  font-size: 13px;
+  font-weight: 600;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.parts-toggle-btn:hover {
+  background: linear-gradient(135deg, #e8f4ff, #f0f8ff);
+  border-color: rgba(46, 152, 255, 0.3);
+  color: #1ca5ff;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(46, 152, 255, 0.2);
+}
+
+.parts-toggle-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
 }
 
 .parts-modal {
@@ -1218,6 +1235,9 @@ body.build-open {
   position: fixed;
   inset: 0;
   z-index: 60;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .download-modal__mask {
@@ -1228,15 +1248,12 @@ body.build-open {
 }
 
 .download-modal__card {
-  position: absolute;
-  left: 50%;
-  bottom: var(--safe-bottom);
-  transform: translateX(-50%);
-  width: min(calc(100% - 32px), 406px);
-  padding: 20px;
-  border-radius: 20px;
+  position: relative;
+  width: min(calc(100% - 32px), 360px);
+  padding: 24px;
+  border-radius: 24px;
   background: #fff;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 380px) {
