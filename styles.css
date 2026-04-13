@@ -128,7 +128,7 @@ body.build-open {
 
 .hero-stage__surface {
   position: relative;
-  min-height: 42vh;
+  min-height: 28vh;
   border-radius: 20px;
   overflow: hidden;
   background: #fff;
@@ -181,8 +181,8 @@ body.build-open {
   position: relative;
   display: grid;
   place-items: center;
-  min-height: 42vh;
-  padding: 70px 16px 50px;
+  min-height: 28vh;
+  padding: 50px 16px 30px;
   perspective: 1200px;
 }
 
