@@ -550,30 +550,6 @@ body.build-open {
   object-position: center;
 }
 
-.model-card__favorite {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
-  border: none;
-  font-size: 16px;
-  color: #ccc;
-  display: grid;
-  place-items: center;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-.model-card__favorite:hover,
-.model-card__favorite.liked {
-  color: #ff6b6b;
-}
-
 .model-card__body {
   display: flex;
   flex-direction: column;
